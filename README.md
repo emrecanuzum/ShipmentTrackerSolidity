@@ -21,6 +21,8 @@ This code is a smart contract written in the Solidity programming language for t
 
 **executeScheduledUpdates**: A function to execute any scheduled updates, it check if the scheduled time has reached or passed and then updates the location accordingly if it has, then removes the scheduled update from storage.
 
+![Screenshot_1](https://user-images.githubusercontent.com/73427323/211668979-d472f0ee-82ec-49b5-ba10-3d599eef1d38.png)
+
 ##
 
 The updateLocation function is used to update the location of a shipment. This function can only be called by the owner of the contract, as specified by the require(msg.sender == owner, "Only the contract owner can update the location of a shipment"); line. If the caller is not the owner, the transaction will be reverted with an error message.
